@@ -13,7 +13,7 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		XMLReader reader = new XMLReader("testXMLFile.xml");
+		XMLReader reader = new XMLReader("project4.xml");
 		reader.readFile();
 		
 		RootNode root = reader.getRootNode();

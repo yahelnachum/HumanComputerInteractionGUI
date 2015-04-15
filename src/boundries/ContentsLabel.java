@@ -22,6 +22,7 @@ public class ContentsLabel extends JLabel {
 		String str = str1;//"Katey Perry is a pop singer ";//from the 80s, what is up with that smell over there";
 		int i = getFontSize(str);
 		str = convertToHtml(str);
+		
 		setText(str);
 		setFont(new Font("Tahoma", Font.PLAIN, i));//HtmlLabelMaker.getFontSize()));
 		setHorizontalAlignment(SwingConstants.CENTER);
@@ -37,11 +38,11 @@ public class ContentsLabel extends JLabel {
 				Font font = new Font("Tahoma", Font.PLAIN, i);//.stringWidth("d");
 				BufferedImage img = new BufferedImage(1, 1, BufferedImage.TYPE_INT_ARGB);
 				FontMetrics fm = img.getGraphics().getFontMetrics(font);
+				
 				int width = fm.stringWidth(content);
 				double result = (double)width/(double)sideLength*1.1;
-				System.out.println(result);
+				
 				if(0.75 <= result && result <= 1.0){
-					System.out.println(i);
 					return i;
 				}
 			}
@@ -58,11 +59,11 @@ public class ContentsLabel extends JLabel {
 			Font font = new Font("Tahoma", Font.PLAIN, i);//.stringWidth("d");
 			BufferedImage img = new BufferedImage(1, 1, BufferedImage.TYPE_INT_ARGB);
 			FontMetrics fm = img.getGraphics().getFontMetrics(font);
+			
 			int width = fm.stringWidth(content);
 			double result = (double)width/(double)sideLength*list[i];
-			System.out.println(result);
+			
 			if(0.75 <= result && result <= 1.0){
-				System.out.println(i);
 				return i;
 			}
 		}
