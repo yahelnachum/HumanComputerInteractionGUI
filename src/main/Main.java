@@ -2,11 +2,9 @@ package main;
 
 import java.awt.EventQueue;
 
-import javax.swing.JFrame;
 import javax.swing.UIManager;
 
 import boundries.Application;
-import boundries.ScrollBarContentsPanel;
 import entities.RootNode;
 import entities.XMLReader;
 
@@ -28,9 +26,9 @@ public class Main {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					//Application frame = new Application();
-					JFrame frame = new JFrame();
-					frame.add(new ScrollBarContentsPanel());
+					Application frame = new Application();
+					//JFrame frame = new JFrame();
+					//frame.add(new ScrollBarContentsPanel());
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
