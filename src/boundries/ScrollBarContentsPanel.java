@@ -29,7 +29,7 @@ public class ScrollBarContentsPanel extends JPanel {
 		String str = "Katey Perry is ";//a pop singer from the 80s";//, what is up with that smell over there";
 		//str = HtmlLabelMaker.convertToHtml(str, 100);
 		JLabel lblNewLabel = new JLabel(str);
-		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, HtmlLabelMaker.getFontSize()));
+		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 12));//HtmlLabelMaker.getFontSize()));
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel.setMaximumSize(new Dimension(100, 100));
 		lblNewLabel.setPreferredSize(new Dimension(100, 100));

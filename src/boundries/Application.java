@@ -16,8 +16,8 @@ import java.awt.Insets;
 
 public class Application extends JFrame {
 
-	int frameWidth;
-	int frameHeight;
+	int frameWidth = 100;
+	int frameHeight = 100;
 	
 	/**
 	 * Create the frame.
