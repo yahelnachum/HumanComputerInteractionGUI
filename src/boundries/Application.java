@@ -1,18 +1,16 @@
 package boundries;
 
-import java.awt.EventQueue;
+import java.awt.Font;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+import java.awt.Insets;
+import java.util.ArrayList;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.JTextArea;
-import javax.swing.JTextField;
-import java.awt.Font;
-import java.awt.GridBagLayout;
-import java.awt.GridBagConstraints;
-import java.awt.Insets;
 
 public class Application extends JFrame {
 
@@ -22,7 +20,7 @@ public class Application extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public Application() {
+	public Application(ArrayList<String> list) {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		//getDisplayBounds();
@@ -63,7 +61,7 @@ public class Application extends JFrame {
 		gbc_lblComeForAll.gridy = 1;
 		panel.add(lblComeForAll, gbc_lblComeForAll);
 		
-		ScrollBarPanel panel_1 = new ScrollBarPanel();
+		ScrollBarPanel panel_1 = new ScrollBarPanel(list);
 		GridBagConstraints gbc_panel_1 = new GridBagConstraints();
 		gbc_panel_1.gridwidth = 3;
 		gbc_panel_1.insets = new Insets(0, 0, 5, 5);

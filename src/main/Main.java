@@ -9,7 +9,7 @@ import entities.RootNode;
 import entities.XMLReader;
 
 public class Main {
-
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
@@ -17,24 +17,25 @@ public class Main {
 		reader.readFile();
 		
 		RootNode root = reader.getRootNode();
+		root.sortEverything();
 		
 		try {
 			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 		} catch (Exception e) {
 		}
 		
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
+		//EventQueue.invokeLater(new Runnable() {
+		//	public void run() {
 				try {
-					Application frame = new Application();
+					Application frame = new Application(root.getChildrenAsString());
 					//JFrame frame = new JFrame();
 					//frame.add(new ScrollBarContentsPanel());
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
-			}
-		});
+			//}
+		//});
 	}
 
 }

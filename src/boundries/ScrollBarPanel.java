@@ -1,23 +1,23 @@
 package boundries;
 
-import javax.swing.JPanel;
-import java.awt.GridBagLayout;
-import javax.swing.JButton;
-import java.awt.GridBagConstraints;
-import java.awt.Insets;
-import javax.swing.JScrollPane;
-import java.awt.Rectangle;
-import java.awt.Dimension;
-import javax.swing.ImageIcon;
-import javax.swing.JLabel;
 import java.awt.Font;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+import java.awt.Insets;
+import java.util.ArrayList;
+
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 
 public class ScrollBarPanel extends JPanel {
 
 	/**
 	 * Create the panel.
 	 */
-	public ScrollBarPanel() {
+	public ScrollBarPanel(ArrayList<String> list) {
 		GridBagLayout gridBagLayout = new GridBagLayout();
 		gridBagLayout.columnWidths = new int[]{0, 0, 0, 0};
 		gridBagLayout.rowHeights = new int[]{0, 0, 0};
@@ -49,8 +49,8 @@ public class ScrollBarPanel extends JPanel {
 		gbc_scrollPane.gridy = 1;
 		add(scrollPane, gbc_scrollPane);
 		
-		ScrollBarContentsPanel panel = new ScrollBarContentsPanel();
-		panel.setPreferredSize(new Dimension(2000, 10));
+		ScrollBarContentsPanel panel = new ScrollBarContentsPanel(list);
+		//panel.setPreferredSize(new Dimension(2000, 10));
 		scrollPane.setViewportView(panel);
 		
 		JButton btnNewButton_1 = new JButton("");

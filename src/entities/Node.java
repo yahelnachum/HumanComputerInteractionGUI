@@ -43,6 +43,14 @@ public class Node implements Comparable<Node>{
 		return children;
 	}
 	
+	public ArrayList<String> getChildrenAsString(){
+		ArrayList<String> list = new ArrayList<String>();
+		for(Node n: children){
+			list.add(n.name);
+		}
+		return list;
+	}
+	
 	public String getName(){
 		return name;
 	}
