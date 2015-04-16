@@ -3,6 +3,10 @@ package entities;
 /* code was used from the following site for parsing the xml file:
  * http://www.mkyong.com/java/how-to-read-xml-file-in-java-dom-parser/
  * 
+ * Formal Citation:
+ * 
+ * Mkyong. "How to Read XML File in Java – (DOM Parser)." Mkyongcom. N.p., n.d. Web. 15 
+ * 		Apr. 2015. <http://www.mkyong.com/java/how-to-read-xml-file-in-java-dom-parser/>. 
  */
 
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -36,27 +40,27 @@ public class XMLReader {
 			// http://stackoverflow.com/questions/13786607/normalization-in-dom-parsing-with-java-how-does-it-work
 			doc.getDocumentElement().normalize();
 
-			//System.out.println("Root element :" + doc.getDocumentElement().getNodeName());
+			/*System.out.println("Root element :" + doc.getDocumentElement().getNodeName());*/
 
 			NodeList nList = doc.getElementsByTagName("cd");
 
-			//System.out.println("----------------------------");
+			/*System.out.println("----------------------------");*/
 
 			for (int temp = 0; temp < nList.getLength(); temp++) {
 
 				Node nNode = nList.item(temp);
 
-				//System.out.println("\nCurrent Element :" + nNode.getNodeName());
+				/*System.out.println("\nCurrent Element :" + nNode.getNodeName());*/
 
 				if (nNode.getNodeType() == Node.ELEMENT_NODE) {
 
 					Element eElement = (Element) nNode;
 
-					/*
-					System.out.println("Genre : " + eElement.getElementsByTagName("genre").item(0).getTextContent());
+					
+					/*System.out.println("Genre : " + eElement.getElementsByTagName("genre").item(0).getTextContent());
 					System.out.println("Artist : "+ eElement.getElementsByTagName("artist").item(0).getTextContent());
-					System.out.println("Title : " + eElement.getElementsByTagName("title").item(0).getTextContent());
-					*/
+					System.out.println("Title : " + eElement.getElementsByTagName("title").item(0).getTextContent());*/
+					
 					
 					root.addCDTitle(eElement.getElementsByTagName("title").item(0).getTextContent(), 
 									eElement.getElementsByTagName("artist").item(0).getTextContent(), 

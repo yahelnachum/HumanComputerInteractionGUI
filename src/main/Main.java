@@ -1,7 +1,5 @@
 package main;
 
-import java.awt.EventQueue;
-
 import javax.swing.UIManager;
 
 import boundries.Application;
@@ -24,18 +22,14 @@ public class Main {
 		} catch (Exception e) {
 		}
 		
-		//EventQueue.invokeLater(new Runnable() {
-		//	public void run() {
-				try {
-					Application frame = new Application(root.getChildrenAsString());
-					//JFrame frame = new JFrame();
-					//frame.add(new ScrollBarContentsPanel());
-					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			//}
-		//});
+		try {
+			Application frame = new Application(root.getChildrenAsString());
+			//JFrame frame = new JFrame();
+			//frame.add(new ScrollBarContentsPanel());
+			frame.setVisible(true);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 }
