@@ -6,13 +6,13 @@ import java.util.Collections;
 public class RootNode extends Node{
 
 	public RootNode(String name) {
-		super(name);
+		super(name, "Genres");
 	}
 
 	public void addCDTitle(String cdTitle, String artist, String genre){
-		addChild(genre);
-		getChild(genre).addChild(artist);
-		getChild(genre).getChild(artist).addChild(cdTitle);
+		addChild(genre, "Artists");
+		getChild(genre).addChild(artist, "CDs");
+		getChild(genre).getChild(artist).addChild(cdTitle, "");
 	}
 	
 	public Node getGenres(){
@@ -26,7 +26,7 @@ public class RootNode extends Node{
 			}
 		}
 		
-		return new Node("");
+		return new Node("", "");
 	}
 	
 	public Node getCDTitles(String artist){
@@ -38,7 +38,7 @@ public class RootNode extends Node{
 			}
 		}
 		
-		return new Node("");
+		return new Node("", "");
 	}
 	
 	public void sortEverything(){

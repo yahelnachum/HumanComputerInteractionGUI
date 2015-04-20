@@ -23,7 +23,7 @@ public class Main {
 		}
 		
 		try {
-			Application frame = new Application(root.getChildrenAsString());
+			Application frame = new Application(root);
 			//JFrame frame = new JFrame();
 			//frame.add(new ScrollBarContentsPanel());
 			frame.setVisible(true);

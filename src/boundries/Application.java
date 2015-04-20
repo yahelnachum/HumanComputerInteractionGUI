@@ -12,15 +12,26 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
+import controllers.ContentsLabelController;
+import entities.Node;
+
 public class Application extends JFrame {
 
 	int frameWidth = 1200;
 	int frameHeight = 435;
+	Node root;
+	
+	JPanel titlePanel;
+	JLabel titleLabel;
+	JLabel subtitleLabel;
+	
+	ScrollBarPanel scrollBarPanel;
 	
 	/**
 	 * Create the frame.
 	 */
-	public Application(ArrayList<String> list) {
+	public Application(Node root) {
+		this.root = root;
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		//getDisplayBounds();
@@ -32,48 +43,92 @@ public class Application extends JFrame {
 		gridBagLayout.rowWeights = new double[]{1.0, 0.0, 1.0, 5.0, 1.0, Double.MIN_VALUE};
 		getContentPane().setLayout(gridBagLayout);
 		
-		JPanel panel = new JPanel();
-		GridBagConstraints gbc_panel = new GridBagConstraints();
-		gbc_panel.insets = new Insets(0, 0, 5, 5);
-		gbc_panel.fill = GridBagConstraints.BOTH;
-		gbc_panel.gridx = 1;
-		gbc_panel.gridy = 1;
-		getContentPane().add(panel, gbc_panel);
-		GridBagLayout gbl_panel = new GridBagLayout();
-		gbl_panel.columnWidths = new int[]{0, 0};
-		gbl_panel.rowHeights = new int[]{0, 0, 0};
-		gbl_panel.columnWeights = new double[]{1.0, Double.MIN_VALUE};
-		gbl_panel.rowWeights = new double[]{0.0, 0.0, Double.MIN_VALUE};
-		panel.setLayout(gbl_panel);
+		// title panel
+		titlePanel = new JPanel();
+		GridBagConstraints gbc_titlePanel = new GridBagConstraints();
+		gbc_titlePanel.insets = new Insets(0, 0, 5, 5);
+		gbc_titlePanel.fill = GridBagConstraints.BOTH;
+		gbc_titlePanel.gridx = 1;
+		gbc_titlePanel.gridy = 1;
+		getContentPane().add(titlePanel, gbc_titlePanel);
+		GridBagLayout gbl_titlePanel = new GridBagLayout();
+		gbl_titlePanel.columnWidths = new int[]{0, 0};
+		gbl_titlePanel.rowHeights = new int[]{0, 0, 0};
+		gbl_titlePanel.columnWeights = new double[]{1.0, Double.MIN_VALUE};
+		gbl_titlePanel.rowWeights = new double[]{0.0, 0.0, Double.MIN_VALUE};
+		titlePanel.setLayout(gbl_titlePanel);
 		
-		JLabel lblTheCdWarehouse = new JLabel("The CD Warehouse");
-		lblTheCdWarehouse.setFont(new Font("Tahoma", Font.PLAIN, 50));
-		GridBagConstraints gbc_lblTheCdWarehouse = new GridBagConstraints();
-		gbc_lblTheCdWarehouse.insets = new Insets(0, 0, 5, 0);
-		gbc_lblTheCdWarehouse.gridx = 0;
-		gbc_lblTheCdWarehouse.gridy = 0;
-		panel.add(lblTheCdWarehouse, gbc_lblTheCdWarehouse);
+		// title label
+		titleLabel = new JLabel("The CD Warehouse");
+		titleLabel.setFont(new Font("Tahoma", Font.PLAIN, 50));
+		GridBagConstraints gbc_titleLabel = new GridBagConstraints();
+		gbc_titleLabel.insets = new Insets(0, 0, 5, 0);
+		gbc_titleLabel.gridx = 0;
+		gbc_titleLabel.gridy = 0;
+		titlePanel.add(titleLabel, gbc_titleLabel);
 		
-		JLabel lblComeForAll = new JLabel("Come for all your musical needs");
-		lblComeForAll.setFont(new Font("Tahoma", Font.PLAIN, 25));
-		GridBagConstraints gbc_lblComeForAll = new GridBagConstraints();
-		gbc_lblComeForAll.gridx = 0;
-		gbc_lblComeForAll.gridy = 1;
-		panel.add(lblComeForAll, gbc_lblComeForAll);
+		// subtitle label
+		subtitleLabel = new JLabel("Come for all your musical needs");
+		subtitleLabel.setFont(new Font("Tahoma", Font.PLAIN, 25));
+		GridBagConstraints gbc_subtitleLabel = new GridBagConstraints();
+		gbc_subtitleLabel.gridx = 0;
+		gbc_subtitleLabel.gridy = 1;
+		titlePanel.add(subtitleLabel, gbc_subtitleLabel);
 		
-		ScrollBarPanel panel_1 = new ScrollBarPanel(list);
-		GridBagConstraints gbc_panel_1 = new GridBagConstraints();
-		gbc_panel_1.gridwidth = 3;
-		gbc_panel_1.insets = new Insets(0, 0, 5, 5);
-		gbc_panel_1.fill = GridBagConstraints.BOTH;
-		gbc_panel_1.gridx = 0;
-		gbc_panel_1.gridy = 3;
-		getContentPane().add(panel_1, gbc_panel_1);
+		// scroll bar panel
+		scrollBarPanel = new ScrollBarPanel(root.getChildren(), root.getChildrensLevel());
+		GridBagConstraints gbc_scrollBarPanel = new GridBagConstraints();
+		gbc_scrollBarPanel.gridwidth = 3;
+		gbc_scrollBarPanel.insets = new Insets(0, 0, 5, 5);
+		gbc_scrollBarPanel.fill = GridBagConstraints.BOTH;
+		gbc_scrollBarPanel.gridx = 0;
+		gbc_scrollBarPanel.gridy = 3;
+		getContentPane().add(scrollBarPanel, gbc_scrollBarPanel);
+		
+		setUpControllers();
 	}
 	
 	public void getDisplayBounds(){
 		GraphicsDevice gd = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
 		frameWidth = 600;//gd.getDisplayMode().getWidth();
 		frameHeight = 300;//gd.getDisplayMode().getHeight();
+	}
+	
+	public JPanel getTitlePanel(){
+		return titlePanel;
+	}
+	
+	public JLabel getTitleLabel(){
+		return titleLabel;
+	}
+	
+	public JLabel getSubtitleLabel(){
+		return subtitleLabel;
+	}
+	
+	public ScrollBarPanel getScrollBarPanel(){
+		return scrollBarPanel;
+	}
+	
+	public Node getRoot(){
+		return root;
+	}
+	
+	public void setUpControllers(){
+		
+		ArrayList<ContentsLabel> contentsLabels = this.getScrollBarPanel().getScrollBarContentsPanel().contentsLabels;
+		
+		for(ContentsLabel cl: contentsLabels){
+			cl.addMouseListener(new ContentsLabelController(this, cl));
+		}
+	}
+	
+	public void updateControllers(){
+
+		ArrayList<ContentsLabel> contentsLabels = this.getScrollBarPanel().getScrollBarContentsPanel().contentsLabels;
+		
+		for(ContentsLabel cl: contentsLabels){
+			cl.addMouseListener(new ContentsLabelController(this, cl));
+		}
 	}
 }
