@@ -220,8 +220,434 @@
 
 	<cd>
 		<genre>Alternative</genre>
-		<artist>Ryan Gosling</artist>
-		<title>Dead Man's Bones</title>
+		<artist>Foo Fighters</artist>
+		<title>Sonic Highways</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>Foo Fighters</artist>
+		<title>Wasting Light</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>Foo Fighters</artist>
+		<title>THe Colour and the Shape</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>Foo Fighters</artist>
+		<title>Greatest Hits</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>Foo Fighters</artist>
+		<title>Echoes, Silence, Patience and Grace</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>Foo Fighters</artist>
+		<title>In Your Honor</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>Foo Fighters</artist>
+		<title>There is Nothing Left to Lose</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>Foo Fighters</artist>
+		<title>Skin and Bones</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>Foo Fighters</artist>
+		<title>Foo Fighters</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>Foo Fighters</artist>
+		<title>Medium Rare</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>Foo Fighters</artist>
+		<title>THe Missing Pieces</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>Red Hot Chili Peppers</artist>
+		<title>Californication</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>Red Hot Chili Peppers</artist>
+		<title>Stadium Arcadium</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>Red Hot Chili Peppers</artist>
+		<title>I'm With You</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>Red Hot Chili Peppers</artist>
+		<title>Bloud Sugar Sex Magik</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>Red Hot Chili Peppers</artist>
+		<title>By the Way</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>Red Hot Chili Peppers</artist>
+		<title>Mother's Milk</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>Red Hot Chili Peppers</artist>
+		<title>Greatest Hits</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>Red Hot Chili Peppers</artist>
+		<title>One Hot Minute</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>Red Hot Chili Peppers</artist>
+		<title>I'm Beside You</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>Red Hot Chili Peppers</artist>
+		<title>Red Hot Chili Peppers</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>Red Hot Chili Peppers</artist>
+		<title>Freaky Styley</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>Red Hot Chili Peppers</artist>
+		<title>The Uplift Mofo Party Plan</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>Red Hot Chili Peppers</artist>
+		<title>What Hits!?</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>Linkin Park</artist>
+		<title>The Hunting Party: Live from Mexico</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>Linkin Park</artist>
+		<title>Meteora</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>Linkin Park</artist>
+		<title>Hybrid Theory</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>Linkin Park</artist>
+		<title>Living Things</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>Linkin Park</artist>
+		<title>Minutes To Midnight</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>Linkin Park</artist>
+		<title>Recharged</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>Linkin Park</artist>
+		<title>A Thousands Suns</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>Linkin Park</artist>
+		<title>Reanimation</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>Linkin Park</artist>
+		<title>Road to Revolution</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>Linkin Park</artist>
+		<title>MALL</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>Linkin Park</artist>
+		<title>Xero</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>Green Day</artist>
+		<title>Dookie</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>Green Day</artist>
+		<title>American Idiot</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>Green Day</artist>
+		<title>Demolicious</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>Green Day</artist>
+		<title>!Uno!</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>Green Day</artist>
+		<title>Nimrod</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>Green Day</artist>
+		<title>!Tre!</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>Green Day</artist>
+		<title>21st Century Breakdown</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>Green Day</artist>
+		<title>Insomniac</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>Green Day</artist>
+		<title>Kerplunk</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>Green Day</artist>
+		<title>Shenanigans</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>Green Day</artist>
+		<title>Bullet in a Bible</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>Green Day</artist>
+		<title>Warning</title>
+	</cd>	
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>U2</artist>
+		<title>Songs of Innocence</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>U2</artist>
+		<title>Achtung Baby</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>U2</artist>
+		<title>The Joshua Tree</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>U2</artist>
+		<title>Boy</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>U2</artist>
+		<title>All That You Can't Leave Behind</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>U2</artist>
+		<title>The Unforgettable Fire</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>U2</artist>
+		<title>Non Line On The Horizon</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>U2</artist>
+		<title>Pop</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>U2</artist>
+		<title>Zooropa</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>U2</artist>
+		<title>Rattle and Hum</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>U2</artist>
+		<title>U218 Singles</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>U2</artist>
+		<title>U22</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>U2</artist>
+		<title>Hot To Dismantle An Atomic Bomb</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>The Smashing Pumpkins</artist>
+		<title>Mellon Collie and the Infinite Sadness</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>The Smashing Pumpkins</artist>
+		<title>Siamese Dream</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>The Smashing Pumpkins</artist>
+		<title>Monuments to an Elegy</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>The Smashing Pumpkins</artist>
+		<title>Adore</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>The Smashing Pumpkins</artist>
+		<title>Gish</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>The Smashing Pumpkins</artist>
+		<title>Greatest Hits</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>The Smashing Pumpkins</artist>
+		<title>MACHINA the Machines of God</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>The Smashing Pumpkins</artist>
+		<title>Oceania</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>The Smashing Pumpkins</artist>
+		<title>Zeitgeist</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>The Smashing Pumpkins</artist>
+		<title>Pisces Iscariot</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>The Smashing Pumpkins</artist>
+		<title>The Aeroplane Flies High</title>
+	</cd>
+	
+	<cd>
+		<genre>Alternative</genre>
+		<artist>The Smashing Pumpkins</artist>
+		<title>Earphoria</title>
 	</cd>
 	
 	<cd>
@@ -231,11 +657,431 @@
 	</cd>
 	
 	<cd>
-		<genre>Rap</genre>
-		<artist>Lyl Wayne</artist>
-		<title>The Carter III</title>
+		<genre>Jazz</genre>
+		<artist>Jamie Cullum</artist>
+		<title>Twentysomething</title>
 	</cd>
-
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Jamie Cullum</artist>
+		<title>Catching Tales</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Jamie Cullum</artist>
+		<title>Momentum</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Jamie Cullum</artist>
+		<title>Heard It All Before</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Jamie Cullum</artist>
+		<title>Pointless Nostalgic</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Jamie Cullum</artist>
+		<title>In the Mind of Jamie Cullum</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Jamie Cullum</artist>
+		<title>The Kings of Swing</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Jamie Cullum</artist>
+		<title>Smell the Glove</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Jamie Cullum</artist>
+		<title>Live at Ronnie Scott's</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Jamie Cullum</artist>
+		<title>Devil May Care!</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Art Tatum</artist>
+		<title>The Tatum Group Masterpieces</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Art Tatum</artist>
+		<title>Piano Starts Here</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Art Tatum</artist>
+		<title>20th Century Piano Genius</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Art Tatum</artist>
+		<title>The Art Tatum, Lionel Hampton, Buddy Rich Trio</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Art Tatum</artist>
+		<title>The Complete Capitol Recordings</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Art Tatum</artist>
+		<title>The Album</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Art Tatum</artist>
+		<title>In Private</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Art Tatum</artist>
+		<title>Piano Grand Master</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Art Tatum</artist>
+		<title>The Best of Art Tatum</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Charles Mingus</artist>
+		<title>The Black Saint and the Sinner Lady</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Charles Mingus</artist>
+		<title>Alternate Takes</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Charles Mingus</artist>
+		<title>Pithecanthropus Erectus</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Charles Mingus</artist>
+		<title>New Tijuana Moods</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Charles Mingus</artist>
+		<title>Mingus Mingus Mingus Mingus Mingus</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Charles Mingus</artist>
+		<title>Blues and Roots</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Charles Mingus</artist>
+		<title>Oh Yeah</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Charles Mingus</artist>
+		<title>Intrusions</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Charles Mingus</artist>
+		<title>The Clown</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Charles Mingus</artist>
+		<title>Mingus Dynasty</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Art Blakey</artist>
+		<title>The Jazz Messengers</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Art Blakey</artist>
+		<title>Moanin'</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Art Blakey</artist>
+		<title>Ugetsu</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Art Blakey</artist>
+		<title>Horace Silver and The Jazz Messengers</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Art Blakey</artist>
+		<title>A Night in Tunisia</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Art Blakey</artist>
+		<title>Roots and Herbs</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Art Blakey</artist>
+		<title>Indestructible</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Art Blakey</artist>
+		<title>The Freedom Rider</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Art Blakey</artist>
+		<title>The African Beat</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Art Blakey</artist>
+		<title>Buttercorn Lady</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Art Blakey</artist>
+		<title>Free for All</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Art Blakey</artist>
+		<title>Mosaic</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Art Blakey</artist>
+		<title>The Big Beat</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Art Blakey</artist>
+		<title>Holiday for Skins</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Art Blakey</artist>
+		<title>Gypsy Folk Tales</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Max Roach</artist>
+		<title>Clifford Brown and Max Roach</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Max Roach</artist>
+		<title>Study in Brown</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Max Roach</artist>
+		<title>Jazz at Massey Hall</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Max Roach</artist>
+		<title>Members, Don't Git Weary</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Max Roach</artist>
+		<title>Deeds, Not Words</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Max Roach</artist>
+		<title>Money Jungle</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Max Roach</artist>
+		<title>M'Boom</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Max Roach</artist>
+		<title>Percussion Bitter Sweet</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Max Roach</artist>
+		<title>Max Roach Plus Four</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Max Roach</artist>
+		<title>Easy Winners</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Max Roach</artist>
+		<title>Rich Versus Roach</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Max Roach</artist>
+		<title>One in Two - Two in One</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Max Roach</artist>
+		<title>Drums Unlimited</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Max Roach</artist>
+		<title>Birth and Rebirth</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Max Roach</artist>
+		<title>Quiet As It's Kept</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Count Basie</artist>
+		<title>Basie</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Count Basie</artist>
+		<title>Basie Straight Ahead</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Count Basie</artist>
+		<title>April in Paris</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Count Basie</artist>
+		<title>One O'Clock Jump</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Count Basie</artist>
+		<title>Satch and Josh</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Count Basie</artist>
+		<title>Strike Up the Band</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Count Basie</artist>
+		<title>Basie Jam</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Count Basie</artist>
+		<title>88 Basie Street</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Count Basie</artist>
+		<title>The Bosses</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Count Basie</artist>
+		<title>Basie's Beatle Bag</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Count Basie</artist>
+		<title>The GIfted Ones</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Count Basie</artist>
+		<title>Standing Ovation</title>
+	</cd>
+	
 	<cd>
 		<genre>Jazz</genre>
 		<artist>Miles Davis</artist>
@@ -243,15 +1089,327 @@
 	</cd>
 	
 	<cd>
-		<genre>Alternative</genre>
-		<artist>Elverum</artist>
-		<title> Mount Eerie 'Wind's Poem'</title>
+		<genre>Jazz</genre>
+		<artist>Miles Davis</artist>
+		<title>In a Silent Way</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Miles Davis</artist>
+		<title>Tutu</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Miles Davis</artist>
+		<title>Sketches of Spain</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Miles Davis</artist>
+		<title>Birth of the Cool</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Miles Davis</artist>
+		<title>On the Corner</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Miles Davis</artist>
+		<title>Doo-Bop</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Miles Davis</artist>
+		<title>Live-Evil</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Miles Davis</artist>
+		<title>Walkin'</title>
+	</cd>
+	
+	<cd>
+		<genre>Jazz</genre>
+		<artist>Miles Davis</artist>
+		<title>Big Fun</title>
+	</cd>
+	
+	<cd>
+		<genre>Rap</genre>
+		<artist>Nicki Minaj</artist>
+		<title>The Pinkprint</title>
+	</cd>
+	
+	<cd>
+		<genre>Rap</genre>
+		<artist>Nicki Minaj</artist>
+		<title>Pink Friday</title>
+	</cd>
+	
+	<cd>
+		<genre>Rap</genre>
+		<artist>Nicki Minaj</artist>
+		<title>Ghetto Barbie</title>
+	</cd>
+	
+	<cd>
+		<genre>Rap</genre>
+		<artist>Nicki Minaj</artist>
+		<title>Barbie World</title>
+	</cd>
+	
+	<cd>
+		<genre>Rap</genre>
+		<artist>Nicki Minaj</artist>
+		<title>Beam Me Up Scotty</title>
+	</cd>
+	
+	<cd>
+		<genre>Rap</genre>
+		<artist>Nicki Minaj</artist>
+		<title>Sucka Free</title>
+	</cd>
+	
+	<cd>
+		<genre>Rap</genre>
+		<artist>Kanye West</artist>
+		<title>Yeezus</title>
+	</cd>
+	
+	<cd>
+		<genre>Rap</genre>
+		<artist>Kanye West</artist>
+		<title>Graduation</title>
+	</cd>
+	
+	<cd>
+		<genre>Rap</genre>
+		<artist>Kanye West</artist>
+		<title>Late Registration</title>
+	</cd>
+	
+	<cd>
+		<genre>Rap</genre>
+		<artist>Kanye West</artist>
+		<title>The COllege Dropout</title>
+	</cd>
+	
+	<cd>
+		<genre>Rap</genre>
+		<artist>Kanye West</artist>
+		<title>808s and Heartbreak</title>
+	</cd>
+	
+	<cd>
+		<genre>Rap</genre>
+		<artist>Kanye West</artist>
+		<title>Watch the Throne</title>
+	</cd>
+	
+	<cd>
+		<genre>Rap</genre>
+		<artist>Kanye West</artist>
+		<title>The Beautiful Dark Twisted Fantasy</title>
+	</cd>
+	
+	<cd>
+		<genre>Rap</genre>
+		<artist>Kanye West</artist>
+		<title>Freshmen Adjustment</title>
+	</cd>
+	
+	<cd>
+		<genre>Rap</genre>
+		<artist>Kanye West</artist>
+		<title>Get Well Soon</title>
+	</cd>
+	
+	<cd>
+		<genre>Rap</genre>
+		<artist>Kanye West</artist>
+		<title>Best of Kanye West</title>
+	</cd>
+	
+	<cd>
+		<genre>Rap</genre>
+		<artist>Kanye West</artist>
+		<title>Late orchestration</title>
+	</cd>
+	
+	<cd>
+		<genre>Rap</genre>
+		<artist>Kanye West</artist>
+		<title>Can't Tell Me Nothing</title>
+	</cd>
+	
+	<cd>
+		<genre>Rap</genre>
+		<artist>B.o.B</artist>
+		<title>New Black</title>
+	</cd>
+	
+	<cd>
+		<genre>Rap</genre>
+		<artist>B.o.B</artist>
+		<title>Underground Luxury</title>
+	</cd>
+	
+	<cd>
+		<genre>Rap</genre>
+		<artist>B.o.B</artist>
+		<title>Strange Clouds</title>
+	</cd>
+	
+	<cd>
+		<genre>Rap</genre>
+		<artist>B.o.B</artist>
+		<title>Epic: Every Play is Crucial</title>
+	</cd>
+	
+	<cd>
+		<genre>Rap</genre>
+		<artist>B.o.B</artist>
+		<title>No Genre</title>
+	</cd>
+	
+	<cd>
+		<genre>Rap</genre>
+		<artist>B.o.B</artist>
+		<title>No Genre</title>
+	</cd>
+	
+	<cd>
+		<genre>Rap</genre>
+		<artist>B.o.B</artist>
+		<title>B.o.B Presents: The Adventures of Bobby Ray</title>
+	</cd>
+	
+	<cd>
+		<genre>Rap</genre>
+		<artist>Rihanna</artist>
+		<title>Unapologetic</title>
+	</cd>
+	
+	<cd>
+		<genre>Rap</genre>
+		<artist>Rihanna</artist>
+		<title>Loud</title>
+	</cd>
+	
+	<cd>
+		<genre>Rap</genre>
+		<artist>Rihanna</artist>
+		<title>Rated R</title>
+	</cd>
+	
+	<cd>
+		<genre>Rap</genre>
+		<artist>Rihanna</artist>
+		<title>Talk That Talk</title>
+	</cd>
+	
+	<cd>
+		<genre>Rap</genre>
+		<artist>Rihanna</artist>
+		<title>Good Girl Gone Bad</title>
+	</cd>
+	
+	<cd>
+		<genre>Rap</genre>
+		<artist>Rihanna</artist>
+		<title>Music of the Sun</title>
+	</cd>
+	
+	<cd>
+		<genre>Rap</genre>
+		<artist>Rihanna</artist>
+		<title>A Girl Like Me</title>
+	</cd>
+	
+	<cd>
+		<genre>Rap</genre>
+		<artist>Rihanna</artist>
+		<title>Devil in a Blue Dress</title>
+	</cd>
+	
+	<cd>
+		<genre>Rap</genre>
+		<artist>Rihanna</artist>
+		<title>Hotness</title>
+	</cd>
+	
+	<cd>
+		<genre>Rap</genre>
+		<artist>Rihanna</artist>
+		<title>Coffret 4</title>
+	</cd>
+	
+	<cd>
+		<genre>Rap</genre>
+		<artist>Ne-Yo</artist>
+		<title>Non-Fiction</title>
+	</cd>
+	
+	<cd>
+		<genre>Rap</genre>
+		<artist>Ne-Yo</artist>
+		<title>Libra Scale</title>
+	</cd>
+	
+	<cd>
+		<genre>Rap</genre>
+		<artist>Ne-Yo</artist>
+		<title>The Collection</title>
+	</cd>
+	
+	<cd>
+		<genre>Rap</genre>
+		<artist>Ne-Yo</artist>
+		<title>Because of You</title>
+	</cd>
+	
+	<cd>
+		<genre>Rap</genre>
+		<artist>Ne-Yo</artist>
+		<title>In My Own Words</title>
 	</cd>
 	
 	<cd>
 		<genre>Folk</genre>
 		<artist>Mumford and Sons</artist>
 		<title>Sigh No More</title>
+	</cd>
+	
+	<cd>
+		<genre>Folk</genre>
+		<artist>Mumford and Sons</artist>
+		<title>Wilder Mind</title>
+	</cd>
+	
+	<cd>
+		<genre>Folk</genre>
+		<artist>Mumford and Sons</artist>
+		<title>The Road to Red Rocks</title>
+	</cd>
+	
+	<cd>
+		<genre>Folk</genre>
+		<artist>Mumford and Sons</artist>
+		<title>Babel</title>
+	</cd>
+	
+	<cd>
+		<genre>Folk</genre>
+		<artist>Mumford and Sons</artist>
+		<title>Live from Shepherd's Bush Empire</title>
 	</cd>
 	
 	<cd>
@@ -297,39 +1455,21 @@
 	</cd>
 	
 	<cd>
-		<genre>World</genre>
-		<artist>Celtic Thunder</artist>
-		<title>Its Entertainment</title>
-	</cd>
-	
-	<cd>
-		<genre>Children</genre>
-		<artist>Cliff Chenfeld and Craig Balsam</artist>
-		<title>Kidz Bop 17</title>
-	</cd>
-	
-	<cd>
-		<genre>Reggae</genre>
-		<artist>Bob Marley</artist>
-		<title>The Legend : Best of Bob Marley and the Wailers Bob Marley</title>
+		<genre>Country</genre>
+		<artist>Miranda Lambert</artist>
+		<title>Platinum</title>
 	</cd>
 	
 	<cd>
 		<genre>Country</genre>
-		<artist>Taylor Swift</artist>
-		<title>Fearless</title>
-	</cd>	
-		
-	<cd>
-		<genre>Country</genre>
-		<artist>Luke Bryan</artist>
-		<title>Doin' My thing</title>
+		<artist>Miranda Lambert</artist>
+		<title>Four the Record</title>
 	</cd>
 	
 	<cd>
-		<genre>Rap</genre>
-		<artist>Jay-Z</artist>
-		<title>The Blueprint 3</title>
+		<genre>Country</genre>
+		<artist>Miranda Lambert</artist>
+		<title>Revolution: Live by Candlelight</title>
 	</cd>
 	
 	<cd>
@@ -337,12 +1477,90 @@
 		<artist>Miranda Lambert</artist>
 		<title>Revolution</title>
 	</cd>
+	
+	<cd>
+		<genre>Country</genre>
+		<artist>Miranda Lambert</artist>
+		<title>Crazy Ex-Girlfriend</title>
+	</cd>
+	
+	<cd>
+		<genre>Country</genre>
+		<artist>Miranda Lambert</artist>
+		<title>Kerosene</title>
+	</cd>
+	
+	<cd>
+		<genre>Country</genre>
+		<artist>Taylor Swift</artist>
+		<title>1989</title>
+	</cd>
+	
+	<cd>
+		<genre>Country</genre>
+		<artist>Taylor Swift</artist>
+		<title>Red</title>
+	</cd>
+	
+	<cd>
+		<genre>Country</genre>
+		<artist>Taylor Swift</artist>
+		<title>Speak Now</title>
+	</cd>
+	
+	<cd>
+		<genre>Country</genre>
+		<artist>Taylor Swift</artist>
+		<title>Fearless</title>
+	</cd>
+	
+	<cd>
+		<genre>Country</genre>
+		<artist>Taylor Swift</artist>
+		<title>Taylor Swift</title>
+	</cd>
+	
+	<cd>
+		<genre>Country</genre>
+		<artist>Kellie Pickler</artist>
+		<title>The Woman I Am</title>
+	</cd>	
+	
+	<cd>
+		<genre>Country</genre>
+		<artist>Kellie Pickler</artist>
+		<title>100 Proof</title>
+	</cd>
+	
+	<cd>
+		<genre>Country</genre>
+		<artist>Kellie Pickler</artist>
+		<title>Kellie Pickler</title>
+	</cd>
+	
+	<cd>
+		<genre>Country</genre>
+		<artist>Kellie Pickler</artist>
+		<title>Small Town Girl</title>
+	</cd>
+	
+	<cd>
+		<genre>Country</genre>
+		<artist>Julia Roberts</artist>
+		<title></title>
+	</cd>	
 
 	<cd>
 		<genre>Pop</genre>
 		<artist>Beyonce</artist>
 		<title>Beyonce</title>
 	</cd>
+	
+	<cd>
+		<genre>Country</genre>
+		<artist>Jessi Alexander</artist>
+		<title></title>
+	</cd>	
 
 	<cd>
 		<genre>Pop</genre>
