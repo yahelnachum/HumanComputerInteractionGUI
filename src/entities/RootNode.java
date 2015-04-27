@@ -52,4 +52,33 @@ public class RootNode extends Node{
 		
 		this.sortChildren();
 	}
+	
+	public Node getParent(String str, String category){
+		if(category.equals("Artists")){
+			return this;
+		}
+		else if(category.equals("CDs")){
+			for(Node genre: this.getChildren()){
+				for(Node artist: genre.getChildren()){
+					for(Node cd: artist.getChildren()){
+						if(cd.getName().equals(str)){
+							return genre;
+						}	
+					}
+				}
+			}
+		}
+		else if(category.equals("")){
+			for(Node genre: this.getChildren()){
+				for(Node artist: genre.getChildren()){
+					for(Node cd: artist.getChildren()){
+						if(cd.getName().equals(str)){
+							return artist;
+						}	
+					}
+				}
+			}
+		}
+		return null;
+	}
 }

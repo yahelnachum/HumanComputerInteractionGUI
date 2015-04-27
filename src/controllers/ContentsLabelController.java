@@ -1,9 +1,12 @@
 package controllers;
 
+import java.awt.GridBagConstraints;
+import java.awt.Insets;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 import boundries.Application;
+import boundries.CDInfoPanel;
 import boundries.ContentsLabel;
 
 public class ContentsLabelController extends MouseAdapter{
@@ -17,7 +20,27 @@ public class ContentsLabelController extends MouseAdapter{
 	@Override
 	public void mouseClicked(MouseEvent e) {
 		// TODO Auto-generated method stub
-		app.getScrollBarPanel().changeScrollBarContentsPanel(cl.getNode().getChildren(), cl.getNode().getChildrensLevel());
-		app.updateControllers();
+		if(cl.getNode().getChildrensLevel().equals("")){
+			app.remove(app.getScrollBarPanel());
+			
+			CDInfoPanel scrollBarPanel = new CDInfoPanel();
+			GridBagConstraints gbc_scrollBarPanel = new GridBagConstraints();
+			gbc_scrollBarPanel.gridwidth = 3;
+			gbc_scrollBarPanel.insets = new Insets(0, 0, 5, 5);
+			gbc_scrollBarPanel.fill = GridBagConstraints.BOTH;
+			gbc_scrollBarPanel.gridx = 0;
+			gbc_scrollBarPanel.gridy = 3;
+			app.getContentPane().add(scrollBarPanel, gbc_scrollBarPanel);
+			app.validate();
+			app.repaint();
+			
+			app.setAtCDInfo(true);
+			app.setCDInfoPanel(scrollBarPanel);
+			
+		}
+		else{
+			app.getScrollBarPanel().changeScrollBarContentsPanel(cl.getNode().getChildren(), cl.getNode().getChildrensLevel());
+			app.updateControllers();
+		}
 	}
 }
