@@ -10,9 +10,15 @@ package entities;
  */
 
 import java.io.File;
+import java.util.ArrayList;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.transform.OutputKeys;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -21,8 +27,116 @@ import org.w3c.dom.NodeList;
 
 import boundries.UserProfile;
 
-public class XMLReader {
+public class XMLParser {
 
+	public static void createUserProfile(String username, String password){
+		try{
+			DocumentBuilderFactory docFactory = DocumentBuilderFactory
+					.newInstance();
+			DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
+			Document doc = docBuilder.newDocument();
+			
+			Element user = doc.createElement("User");
+			user.setAttribute("name", username);
+			user.setAttribute("password", password);
+			
+			doc.appendChild(user);
+			
+			TransformerFactory transformerFactory = TransformerFactory
+					.newInstance();
+			Transformer transformer = transformerFactory.newTransformer();
+			transformer.setOutputProperty(OutputKeys.INDENT, "yes");
+			transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "2");
+			DOMSource source = new DOMSource(doc);
+			StreamResult result = new StreamResult(new File(username+"UserProfile.xml"));
+			transformer.transform(source, result);
+		}
+		catch (Exception e){
+			
+		}
+			
+	}
+	
+	public static void addCDToUserProfile(String fileName, String cd, String artist, String genre){
+		try {
+			
+			File fXmlFile = new File(fileName);
+			DocumentBuilderFactory dbFactory = DocumentBuilderFactory
+					.newInstance();
+			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+			Document doc = dBuilder.parse(fXmlFile);
+
+			Node user = doc.getElementsByTagName("User").item(0);
+			
+			/*String userName = user.getAttributes().item(0).getTextContent();
+			String password = user.getAttributes().item(1).getTextContent();
+			
+			doc.getDocumentElement().normalize();
+
+			System.out.println("Root element :" + doc.getDocumentElement().getNodeName());
+
+			NodeList nList = doc.getElementsByTagName("WishListCD");
+
+			System.out.println("----------------------------");*/
+			ArrayList<String> currentWishListInfo = new ArrayList<String>();
+			/*for (int temp = 0; temp < nList.getLength(); temp++) {
+
+				Node nNode = nList.item(temp);
+
+				System.out.println("\nCurrent Element :" + nNode.getNodeName());
+
+				if (nNode.getNodeType() == Node.ELEMENT_NODE) {
+
+					Element eElement = (Element) nNode;
+		
+					currentWishListInfo.add(eElement.getElementsByTagName("title").item(0).getTextContent());
+					currentWishListInfo.add(eElement.getElementsByTagName("artist").item(0).getTextContent());
+					currentWishListInfo.add(eElement.getElementsByTagName("genre").item(0).getTextContent());
+				}
+			}*/
+			
+			currentWishListInfo.add(cd);
+			currentWishListInfo.add(artist);
+			currentWishListInfo.add(genre);
+			
+			Element userElement = (Element) user;
+			
+			Element wishlistElement = doc.createElement("WishListCD");
+			
+			Element genreName = doc.createElement("genre");
+			genreName.appendChild(doc.createTextNode(genre));
+			wishlistElement.appendChild(genreName);
+			
+			Element artistName = doc.createElement("artist");
+			artistName.appendChild(doc.createTextNode(artist));
+			wishlistElement.appendChild(artistName);
+			
+			Element cdTitle = doc.createElement("title");
+			cdTitle.appendChild(doc.createTextNode(cd));
+			wishlistElement.appendChild(cdTitle);
+			userElement.appendChild(wishlistElement);
+			
+			TransformerFactory transformerFactory = TransformerFactory
+					.newInstance();
+			Transformer transformer = transformerFactory.newTransformer();
+			transformer.setOutputProperty(OutputKeys.INDENT, "yes");
+			transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "2");
+			DOMSource source = new DOMSource(doc);
+			StreamResult result = new StreamResult(new File(fileName));
+			transformer.transform(source, result);
+			
+			/*DocumentBuilderFactory docFactory = DocumentBuilderFactory
+					.newInstance();
+			DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
+			Document doc = docBuilder.newDocument();*/
+			
+			
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
 	public static UserProfile readUserProfileCredentials(String fileName){
 		try {
 			
@@ -59,7 +173,7 @@ public class XMLReader {
 
 			Node user = doc.getElementsByTagName("User").item(0);
 			
-			System.out.println(user.getAttributes().item(0).getTextContent());
+			//System.out.println(user.getAttributes().item(0).getTextContent());
 			// optional, but recommended
 			// read this -
 			// http://stackoverflow.com/questions/13786607/normalization-in-dom-parsing-with-java-how-does-it-work
@@ -86,7 +200,7 @@ public class XMLReader {
 									eElement.getElementsByTagName("genre").item(0).getTextContent());
 				}
 			}
-			
+			root.sortEverything();
 			return root;
 			
 		} catch (Exception e) {

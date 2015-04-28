@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 
 import boundries.Application;
 import entities.RootNode;
-import entities.XMLReader;
+import entities.XMLParser;
 
 public class WishlistController implements ActionListener{
 
@@ -16,10 +16,12 @@ public class WishlistController implements ActionListener{
 	
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		RootNode root = XMLReader.readUserProfileWishList("UserProfile.xml");
+		RootNode root = XMLParser.readUserProfileWishList(app.getUsername()+"UserProfile.xml");
 		
 		app.getScrollBarPanel().changeScrollBarContentsPanel(root.getAllCDs(), "Wishlist CDs");
 		app.updateControllers();
+		
+		app.setAtWishlist(true);
 	}
 
 }

@@ -1,6 +1,7 @@
 package boundries;
 
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.Insets;
@@ -8,16 +9,21 @@ import java.awt.Insets;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.border.LineBorder;
-import java.awt.Font;
 import javax.swing.SwingConstants;
+import javax.swing.border.LineBorder;
+
+import controllers.AddToWishlistController;
+import controllers.WishlistController;
 
 public class CDInfoPanel extends JPanel {
 
+	JLabel cdLabel;
+	JButton wishListButton;
+	
 	/**
 	 * Create the panel.
 	 */
-	public CDInfoPanel(String cdName) {
+	public CDInfoPanel(String cdName, Application app) {
 		GridBagLayout gridBagLayout = new GridBagLayout();
 		gridBagLayout.columnWidths = new int[]{0, 0, 0, 0, 0, 0};
 		gridBagLayout.rowHeights = new int[]{0, 0, 0, 0};
@@ -25,7 +31,7 @@ public class CDInfoPanel extends JPanel {
 		gridBagLayout.rowWeights = new double[]{1.0, 1.0, 10.0, Double.MIN_VALUE};
 		setLayout(gridBagLayout);
 		
-		JLabel cdLabel = new JLabel(cdName);
+		cdLabel = new JLabel(cdName);
 		cdLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		cdLabel.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		cdLabel.setBorder(new LineBorder(new Color(0, 0, 0)));
@@ -46,7 +52,7 @@ public class CDInfoPanel extends JPanel {
 		gbc_buyButton.gridy = 0;
 		add(buyButton, gbc_buyButton);
 		
-		JButton wishListButton = new JButton("Add to Wish List");
+		wishListButton = new JButton("Add to Wish List");
 		GridBagConstraints gbc_wishListButton = new GridBagConstraints();
 		gbc_wishListButton.fill = GridBagConstraints.BOTH;
 		gbc_wishListButton.insets = new Insets(0, 0, 5, 5);
@@ -77,6 +83,15 @@ public class CDInfoPanel extends JPanel {
 		gbc_albumInfoLabel.gridy = 2;
 		add(albumInfoLabel, gbc_albumInfoLabel);
 
+		getWishListButton().addActionListener(new AddToWishlistController(app));
+	}
+	
+	public JLabel getCDLabel(){
+		return cdLabel;
+	}
+	
+	public JButton getWishListButton(){
+		return wishListButton;
 	}
 
 }

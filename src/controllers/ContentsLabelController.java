@@ -19,13 +19,13 @@ public class ContentsLabelController extends MouseAdapter{
 	}
 	@Override
 	public void mouseClicked(MouseEvent e) {
-		// TODO Auto-generated method stub
+
 		if(cl.getNode().getChildrensLevel().equals("")){
 			app.remove(app.getScrollBarPanel());
 			
-			CDInfoPanel scrollBarPanel = new CDInfoPanel(cl.getNode().getName());
+			CDInfoPanel scrollBarPanel = new CDInfoPanel(cl.getNode().getName(), app);
 			GridBagConstraints gbc_scrollBarPanel = new GridBagConstraints();
-			gbc_scrollBarPanel.gridwidth = 3;
+			gbc_scrollBarPanel.gridwidth = 4;
 			gbc_scrollBarPanel.insets = new Insets(0, 0, 5, 0);
 			gbc_scrollBarPanel.fill = GridBagConstraints.BOTH;
 			gbc_scrollBarPanel.gridx = 0;

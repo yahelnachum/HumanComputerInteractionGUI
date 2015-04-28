@@ -92,4 +92,30 @@ public class RootNode extends Node{
 		
 		return allCds;
 	}
+	
+	public String getArtist(String cd){
+		for(Node genre: this.getChildren()){
+			for(Node artist: genre.getChildren()){
+				for(Node cdNode: artist.getChildren()){
+					if(cdNode.getName().equals(cd)){
+						return artist.getName();
+					}
+				}
+			}
+		}
+		
+		return null;
+	}
+	
+	public String getGenre(String artist){
+		for(Node genre: this.getChildren()){
+			for(Node artistNode: genre.getChildren()){
+				if(artistNode.getName().equals(artist)){
+					return genre.getName();
+				}
+			}
+		}
+		
+		return null;
+	}
 }

@@ -4,17 +4,14 @@ import javax.swing.UIManager;
 
 import boundries.Application;
 import entities.RootNode;
-import entities.XMLReader;
+import entities.XMLParser;
 
 public class Main {
 	
 	public static void main(String[] args) {
 				
-		RootNode root = XMLReader.readCatalogueFile("project4.xml");;
+		RootNode root = XMLParser.readCatalogueFile("project4.xml");;
 		root.sortEverything();
-		
-		XMLReader.readUserProfileWishList("UserProfile.xml");
-		XMLReader.readUserProfileCredentials("UserProfile.xml");
 		
 		try {
 			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());

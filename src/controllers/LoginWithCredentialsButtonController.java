@@ -6,7 +6,7 @@ import java.awt.event.WindowEvent;
 
 import boundries.Application;
 import boundries.UserProfile;
-import entities.XMLReader;
+import entities.XMLParser;
 
 public class LoginWithCredentialsButtonController implements ActionListener {
 
@@ -18,7 +18,8 @@ public class LoginWithCredentialsButtonController implements ActionListener {
 	
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		UserProfile user = XMLReader.readUserProfileCredentials("UserProfile.xml");
+		app.setUsername(app.getLoginApp().getUsernameTextField().getText());
+		UserProfile user = XMLParser.readUserProfileCredentials(app.getUsername()+"UserProfile.xml");
 		
 		if(app.getLoginApp().getUsernameTextField().getText().equals(user.getUserName()) &&
 		   app.getLoginApp().getPasswordTextField().getText().equals(user.getPassword())){
