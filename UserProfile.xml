@@ -1,0 +1,27 @@
+<User name="yahelnachum" password="123456">
+	
+	<WishListCD>
+		<genre>Blues</genre>
+		<artist>Duke Robillard</artist>
+		<title>Dukes Blue</title>
+	</WishListCD>
+	
+	<WishListCD>
+		<genre>Blues</genre>
+		<artist>Patti LaBelle</artist>
+		<title>Patti LaBell: Greatest Hits</title>
+	</WishListCD>
+		
+	<WishListCD>
+		<genre>Jazz</genre>
+		<artist>Count Basie</artist>
+		<title>The Bosses</title>
+	</WishListCD>
+		
+	<WishListCD>
+		<genre>Rap</genre>
+		<artist>Ne-Yo</artist>
+		<title>Libra Scale</title>
+	</WishListCD>
+	
+</User>

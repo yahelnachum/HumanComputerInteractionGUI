@@ -9,13 +9,15 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.border.LineBorder;
+import java.awt.Font;
+import javax.swing.SwingConstants;
 
 public class CDInfoPanel extends JPanel {
 
 	/**
 	 * Create the panel.
 	 */
-	public CDInfoPanel() {
+	public CDInfoPanel(String cdName) {
 		GridBagLayout gridBagLayout = new GridBagLayout();
 		gridBagLayout.columnWidths = new int[]{0, 0, 0, 0, 0, 0};
 		gridBagLayout.rowHeights = new int[]{0, 0, 0, 0};
@@ -23,7 +25,9 @@ public class CDInfoPanel extends JPanel {
 		gridBagLayout.rowWeights = new double[]{1.0, 1.0, 10.0, Double.MIN_VALUE};
 		setLayout(gridBagLayout);
 		
-		JLabel cdLabel = new JLabel("Cd Title");
+		JLabel cdLabel = new JLabel(cdName);
+		cdLabel.setHorizontalAlignment(SwingConstants.CENTER);
+		cdLabel.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		cdLabel.setBorder(new LineBorder(new Color(0, 0, 0)));
 		GridBagConstraints gbc_cdLabel = new GridBagConstraints();
 		gbc_cdLabel.gridheight = 2;
@@ -51,6 +55,8 @@ public class CDInfoPanel extends JPanel {
 		add(wishListButton, gbc_wishListButton);
 		
 		JLabel albumArtLabel = new JLabel("Album Art");
+		albumArtLabel.setHorizontalAlignment(SwingConstants.CENTER);
+		albumArtLabel.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		albumArtLabel.setBorder(new LineBorder(new Color(0, 0, 0)));
 		GridBagConstraints gbc_albumArtLabel = new GridBagConstraints();
 		gbc_albumArtLabel.fill = GridBagConstraints.BOTH;
@@ -60,6 +66,8 @@ public class CDInfoPanel extends JPanel {
 		add(albumArtLabel, gbc_albumArtLabel);
 		
 		JLabel albumInfoLabel = new JLabel("Album Info");
+		albumInfoLabel.setHorizontalAlignment(SwingConstants.CENTER);
+		albumInfoLabel.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		albumInfoLabel.setBorder(new LineBorder(new Color(0, 0, 0)));
 		GridBagConstraints gbc_albumInfoLabel = new GridBagConstraints();
 		gbc_albumInfoLabel.gridwidth = 2;

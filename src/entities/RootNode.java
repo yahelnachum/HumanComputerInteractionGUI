@@ -1,7 +1,6 @@
 package entities;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
 public class RootNode extends Node{
 
@@ -80,5 +79,17 @@ public class RootNode extends Node{
 			}
 		}
 		return null;
+	}
+	
+	public ArrayList<Node> getAllCDs(){
+		ArrayList<Node> allCds = new ArrayList<Node>();
+		
+		for(Node genre: this.getChildren()){
+			for(Node artist: genre.getChildren()){
+				allCds.addAll(artist.getChildren());
+			}
+		}
+		
+		return allCds;
 	}
 }

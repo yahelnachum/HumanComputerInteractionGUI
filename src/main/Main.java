@@ -9,13 +9,12 @@ import entities.XMLReader;
 public class Main {
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-		XMLReader reader = new XMLReader("project4.xml");
-		reader.readFile();
-		
-		RootNode root = reader.getRootNode();
+				
+		RootNode root = XMLReader.readCatalogueFile("project4.xml");;
 		root.sortEverything();
+		
+		XMLReader.readUserProfileWishList("UserProfile.xml");
+		XMLReader.readUserProfileCredentials("UserProfile.xml");
 		
 		try {
 			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());

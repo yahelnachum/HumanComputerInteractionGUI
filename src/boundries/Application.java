@@ -1,8 +1,6 @@
 package boundries;
 
 import java.awt.Font;
-import java.awt.GraphicsDevice;
-import java.awt.GraphicsEnvironment;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.Insets;
@@ -15,13 +13,16 @@ import javax.swing.JPanel;
 
 import controllers.BackButtonController;
 import controllers.ContentsLabelController;
-import entities.Node;
+import controllers.LoginButtonController;
+import controllers.LoginWithCredentialsButtonController;
+import controllers.ScrollButtonController;
+import controllers.WishlistController;
 import entities.RootNode;
 
 public class Application extends JFrame {
 
-	int frameWidth = 1200;
-	int frameHeight = 435;
+	protected final int frameWidth = 1200;
+	protected final int frameHeight = 435;
 	
 	RootNode root;
 	
@@ -37,6 +38,8 @@ public class Application extends JFrame {
 	boolean atCDInfo = false;
 	private JButton loginButton;
 	
+	LoginApp loginApp;
+	private JButton wishlistButton;
 	/**
 	 * Create the frame.
 	 */
@@ -47,9 +50,9 @@ public class Application extends JFrame {
 		//getDisplayBounds();
 		setBounds(0, 0, frameWidth, frameHeight);
 		GridBagLayout gridBagLayout = new GridBagLayout();
-		gridBagLayout.columnWidths = new int[]{0, 0, 0, 0};
+		gridBagLayout.columnWidths = new int[]{0, 0, 0, 0, 0};
 		gridBagLayout.rowHeights = new int[]{0, 0, 75, 50, 0, 0, 0};
-		gridBagLayout.columnWeights = new double[]{1.0, 1.0, 1.0, Double.MIN_VALUE};
+		gridBagLayout.columnWeights = new double[]{1.0, 20.0, 1.0, 1.0, Double.MIN_VALUE};
 		gridBagLayout.rowWeights = new double[]{1.0, 1.0, 0.0, 1.0, 5.0, 1.0, Double.MIN_VALUE};
 		getContentPane().setLayout(gridBagLayout);
 		
@@ -63,17 +66,28 @@ public class Application extends JFrame {
 		
 		loginButton = new JButton("Login");
 		GridBagConstraints gbc_loginButton = new GridBagConstraints();
-		gbc_loginButton.insets = new Insets(0, 0, 5, 0);
+		gbc_loginButton.fill = GridBagConstraints.HORIZONTAL;
+		gbc_loginButton.insets = new Insets(0, 0, 5, 5);
 		gbc_loginButton.gridx = 2;
 		gbc_loginButton.gridy = 0;
 		getContentPane().add(loginButton, gbc_loginButton);
 		
+		wishlistButton = new JButton("Wishlist");
+		GridBagConstraints gbc_wishlistButton = new GridBagConstraints();
+		gbc_wishlistButton.fill = GridBagConstraints.HORIZONTAL;
+		gbc_wishlistButton.insets = new Insets(0, 0, 5, 0);
+		gbc_wishlistButton.gridx = 3;
+		gbc_wishlistButton.gridy = 0;
+		getContentPane().add(wishlistButton, gbc_wishlistButton);
+		wishlistButton.setVisible(false);
+		
 		// title panel
 		titlePanel = new JPanel();
 		GridBagConstraints gbc_titlePanel = new GridBagConstraints();
+		gbc_titlePanel.gridwidth = 4;
 		gbc_titlePanel.insets = new Insets(0, 0, 5, 5);
 		gbc_titlePanel.fill = GridBagConstraints.BOTH;
-		gbc_titlePanel.gridx = 1;
+		gbc_titlePanel.gridx = 0;
 		gbc_titlePanel.gridy = 2;
 		getContentPane().add(titlePanel, gbc_titlePanel);
 		GridBagLayout gbl_titlePanel = new GridBagLayout();
@@ -103,20 +117,13 @@ public class Application extends JFrame {
 		// scroll bar panel
 		scrollBarPanel = new ScrollBarPanel(root.getChildren(), root.getChildrensLevel());
 		GridBagConstraints gbc_scrollBarPanel = new GridBagConstraints();
-		gbc_scrollBarPanel.gridwidth = 3;
+		gbc_scrollBarPanel.gridwidth = 4;
 		gbc_scrollBarPanel.insets = new Insets(0, 0, 5, 0);
 		gbc_scrollBarPanel.fill = GridBagConstraints.BOTH;
 		gbc_scrollBarPanel.gridx = 0;
 		gbc_scrollBarPanel.gridy = 4;
-		getContentPane().add(scrollBarPanel, gbc_scrollBarPanel);
-		
+		getContentPane().add(scrollBarPanel, gbc_scrollBarPanel);show();
 		setUpControllers();
-	}
-	
-	public void getDisplayBounds(){
-		GraphicsDevice gd = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
-		frameWidth = 600;//gd.getDisplayMode().getWidth();
-		frameHeight = 300;//gd.getDisplayMode().getHeight();
 	}
 	
 	public JPanel getTitlePanel(){
@@ -148,6 +155,9 @@ public class Application extends JFrame {
 		}
 		
 		backButton.addActionListener(new BackButtonController(this));
+		loginButton.addActionListener(new LoginButtonController(this));
+		scrollBarPanel.getLeftButton().addActionListener(new ScrollButtonController(this, -173));
+		scrollBarPanel.getRightButton().addActionListener(new ScrollButtonController(this, 173));
 	}
 	
 	public void updateControllers(){
@@ -175,4 +185,23 @@ public class Application extends JFrame {
 		this.cdInfoPanel = cdInfoPanel;
 	}
 	
+	public void setLoginApp(LoginApp app){
+		this.loginApp = app;
+	}
+	
+	public LoginApp getLoginApp(){
+		return this.loginApp;
+	}
+	
+	public void setUpLoginWithCredentialsController(){
+		loginApp.getLoginWithCredentialsButton().addActionListener(new LoginWithCredentialsButtonController(this));
+	}
+	
+	public JButton getWishlistButton(){
+		return wishlistButton;
+	}
+	
+	public void setupWishlistController(){
+		wishlistButton.addActionListener(new WishlistController(this));
+	}
 }
